@@ -25,3 +25,51 @@ pnpm create next-app --example with-tailwindcss with-tailwindcss-app
 ```
 
 Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+
+
+yarn add graphql graphql-request 
+
+
+http://api.mediastack.com/v1/
+
+ 
+
+// Live News Data
+
+http://api.mediastack.com/v1/news?access_key=YOUR_ACCESS_KEY
+    
+// optional parameters: 
+
+    & sources = cnn,bbc
+    & categories = business,sports
+    & countries = us,au
+    & languages = en,-de
+    & keywords = virus,-corona
+    & sort = published_desc
+    & offset = 0
+    & limit = 100
+    
+    // Historical News Data
+
+http://api.mediastack.com/v1/news
+    ? access_key = YOUR_ACCESS_KEY
+    & date = 2020-02-19
+
+
+// News Sources
+
+http://api.mediastack.com/v1/sources
+    ? access_key = YOUR_ACCESS_KEY
+    & search = abc
+    
+// optional parameters: 
+
+    & categories = business,sports
+    & countries = us,au
+    & languages = en,-de
+    & offset = 0
+    & limit = 100
+
+
+npm install -g stepzen
+
